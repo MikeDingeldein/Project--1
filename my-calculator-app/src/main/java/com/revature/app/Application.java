@@ -19,7 +19,8 @@ public class Application {
 		ArithmeticController controller1 = new ArithmeticController(new ArithmeticService());
 		controller1.registerEndpoint(app);
 
-		app.start(8080);// start server on 8080
+		app.start(8080);// start server on 8080, 
+		//remember to set postman to http://localhost:8080/
 
 	}
 

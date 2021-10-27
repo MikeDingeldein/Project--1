@@ -15,8 +15,6 @@ public class Main {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://localhost:8080");
 
-		// to pause
-		// Thread.sleep(10000);
 
 		// Locate the 2 input elements and button for adding numbers
 		//ctrl +j to open webpage code and find ids. 
@@ -38,8 +36,7 @@ public class Main {
 		// embedded into inside of the iframe
 		// can "pre" id be changed? seems strange.
 		System.out.println(addOutput.getText()); 
-		// print out the text of the 
-		// output element
+		// print out the text of the output element
 
 		driver.switchTo().defaultContent(); 
 		// Switch back outside of the iframe
@@ -59,8 +56,7 @@ public class Main {
 		// Switch into the inside of the iframe
 
 		WebElement subOutput = driver.findElement(By.tagName("pre")); 
-		// find the pre tag that the addition result is																
-		// embedded into inside of the iframe
+		// find the pre tag that the addition result is embedded into inside of the iframe
 		
 		System.out.println(subOutput.getText()); 
 		// print out the text of the output element
@@ -85,8 +81,7 @@ public class Main {
 		// embedded into inside of the iframe
 		
 		System.out.println(multOutput.getText()); 
-		// print out the text of the
-		// output element
+		// print out the text of the output element
 
 		driver.switchTo().defaultContent(); 
 		// Switch back outside of the iframe
@@ -108,8 +103,7 @@ public class Main {
 		// embedded into inside of the iframe
 		
 		System.out.println(divOutput.getText()); 
-		// print out the text of the
-		// output element
+		// print out the text of the output element
 
 		driver.switchTo().defaultContent();
 		// Switch back outside of the iframe
@@ -118,8 +112,6 @@ public class Main {
 		Thread.sleep(10000);
 
 		// quit method
-		// whenever we are done with the scripted tasks we will provide to Selenium
-		// WebDriver. You should quit the driver.
 
 		driver.quit();
 
